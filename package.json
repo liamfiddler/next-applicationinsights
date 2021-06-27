@@ -1,12 +1,12 @@
 {
-  "name": "next-applicationinsights",
+  "name": "@drewjs/next-applicationinsights",
   "version": "1.0.4",
   "description": "React higher-order component for using Azure Application Insights inside Next.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "next",
-    "build": "rm -rf dist && tsc src/index.ts --outDir dist --declaration --esModuleInterop",
+    "build": "rimraf dist && tsc src/index.ts --outDir dist --declaration --esModuleInterop",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -28,7 +28,7 @@
     "url": "https://github.com/goenning/next-applicationinsights/issues"
   },
   "peerDependencies": {
-    "next": "^10 || ^11",
+    "next": "^10.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
@@ -36,9 +36,10 @@
     "@types/node": "^14.17.4",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
-    "next": "^11.0.1",
+    "next": "^10.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rimraf": "^3.0.2",
     "typescript": "^4.3.4"
   }
 }
